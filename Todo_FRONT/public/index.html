@@ -1,0 +1,197 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO</title>
+    <link rel="stylesheet" href="style.css"></link>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+    <body>
+      <div class="video-bg">
+        <video width="320" height="240" autoplay loop muted>
+          <source
+            src="https://assets.codepen.io/3364143/7btrrd.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    <div class="dark-light">
+      <svg
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="1.5"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+      </svg>
+    </div>
+    <div class="app">
+      <div class="header">
+        <!-- <div class="menu-circle"><img></div> -->
+        
+        <div class="header-menu">
+          <a class="menu-link is-active" href="#">Task Planner</a>
+          <a class="menu-link" id="RegisterBTN">register</a>
+          <a class="menu-link" href="#">demo</a>
+          <a class="menu-link" href="#">demo</a>
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="Search" />
+        </div>
+        <div id="username" class="username"></div>  
+        <div><button onclick="logout()" class="logout"></button></div>
+        <div class="header-profile">
+          <div class="notification">
+            <span class="notification-number">7</span>
+            <svg
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-bell"
+            >
+              <path
+                d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0"
+              />
+            </svg>
+          </div>
+       
+          <img
+            id="ProfilePIC"
+            class="profile-img"
+            src="icons/135220062216366327185368.svg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="left-side">
+          <div class="side-wrapper">
+            <div class="side-title">Events</div>
+            <div class="side-menu">
+              <a href="today.html">
+                TODAY
+              </a>
+              
+            </div>
+          </div>
+         
+          <div class="side-wrapper">
+            <div class="side-title">Calendar</div>
+            <div class="side-menu">
+              <a href="calender.html">    
+                Schedule Events
+              </a>
+            </div>
+          </div>
+          <div class="side-wrapper">
+            <div class="side-title">Categories</div>
+            <div class="side-menu">
+              <a href="Tasks.html">
+                All Tasks
+              </a>
+              <a href="#">
+                My Projects
+              </a>
+              <a href="#">
+               
+                Team
+              </a>
+              <a href="#">
+               
+                Personal
+              </a>             
+            </div>
+          </div>
+          <div class="side-wrapper">
+            <div class="side-title">Resource Links</div>
+            <div class="side-menu">
+              <a href="https://github.com/Sanketaware/LibraryAPI.git">  
+               my Github
+              </a>
+              <a href="https://www.flexur.com/">  
+              Flexur
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="main-container">
+          <div class="main-header">
+            <a class="menu-link-main" href="#">Event Planner</a>        
+          </div>
+          <div class="content-wrapper">
+            <div class="content-wrapper-header">
+              <div class="content-wrapper-context">
+                <h3 class="img-content">
+                  
+                    Effortlessly Plan Your Day
+                </h3>
+                <div class="content-text">
+                    Craft Your Daily Success: Start Organizing  with Your Personal Task List Now!  
+                          To-Do List Creation Here!"
+
+                </div>
+                <button id="AddTaskBTN" class="content-button">Create Event</button>
+              </div>
+              <img
+                class="content-wrapper-img"
+                src="https://assets.codepen.io/3364143/glass.png"
+                alt=""
+              />
+            </div>
+            <div class="content-section">
+              <div class="content-section-title">Daily Reminders</div>
+              <div class="transction">
+                <div class="title-element">Transction Todo</div>
+               
+                <div class="box-trans-sub ">
+                    <img src="icons/netflix-logo-png-2574.png" alt="">
+                    <div class="info-trans-sub ">
+                        <h5>Netflix</h5>
+                        <div>Payment Reminder</div>
+                    </div>
+                    <div class="money-time-trans-sub ">
+                        <h5>-$12.79</h5>
+                        <div>11:00 PM</div>
+                    </div>
+                </div>
+            
+                <div class="box-trans-sub ">
+                    <img src="https://avatars.githubusercontent.com/u/10639145?s=200&v=4" alt="">
+                    <div class="info-trans-sub ">
+                        <h5>Apple</h5>
+                        <div>Payment Reminder</div>
+                    </div>
+                    <div class="money-time-trans-sub ">
+                        <h5>-$66.90</h5>
+                        <div>19:23 PM</div>
+                    </div>
+                </div>
+                <div class="box-trans-sub ">
+                  <img src="icons/spotify-logo.png" alt="">
+                  <div class="info-trans-sub ">
+                      <h5>Spotify</h5>
+                      <div>Payment Reminder</div>
+                  </div>
+                  <div class="money-time-trans-sub ">
+                      <h5>-$19.90</h5>
+                      <div>18:30 PM</div>
+                  </div>
+              </div>
+            </div>
+            </div>
+         
+      <div class="overlay-app"></div>
+    </div>
+  
+   <script src="main.js"></script>
+   <script src="logon.js"></script>
+   <script src="register.js"></script>
+   <script src="script.js"></script>
+  </body>
+</html>
